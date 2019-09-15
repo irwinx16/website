@@ -1,0 +1,25 @@
+{
+  "name": "anybake",
+  "version": "1.0.0",
+  "description": "website template",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irwinx16/anybake.git"
+  },
+  "author": "Irwin Marcano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irwinx16/anybake/issues"
+  },
+  "homepage": "https://github.com/irwinx16/anybake#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
