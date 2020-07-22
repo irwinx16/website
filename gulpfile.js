@@ -8,8 +8,7 @@ gulp.task('browser-sync', function () {
 		server: ["./docs"]
 		// server: ["./", "./css/", "./js/"]
 	});
-
-	gulp.watch("./*.html").on('change', browserSync.reload);
+	gulp.watch("./docs/*.html").on('change', browserSync.reload);
 	gulp.watch("./css/*.css").on('change', browserSync.reload);
 	gulp.watch("./js/*.js").on('change', browserSync.reload);
 });
