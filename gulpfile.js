@@ -5,7 +5,8 @@ var browserSync = require('browser-sync').create();
 // Static server
 gulp.task('browser-sync', function () {
 	browserSync.init({
-		server: ["./", "./css/", "./js/"]
+		server: ["./docs"]
+		// server: ["./", "./css/", "./js/"]
 	});
 
 	gulp.watch("./*.html").on('change', browserSync.reload);

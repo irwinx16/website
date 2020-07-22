@@ -3,7 +3,9 @@
 	"version": "1.0.0",
 	"description": "Website Template",
 	"main": "main.js",
-	"dependencies": {},
+	"dependencies": {
+		"gulp-cli": "^2.3.0"
+	},
 	"devDependencies": {
 		"browser-sync": "^2.26.10",
 		"gulp": "^4.0.2"
