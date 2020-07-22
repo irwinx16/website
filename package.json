@@ -1,28 +1,25 @@
 {
-  "name": "anyBake",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "doc": "doc"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/irwinx16/anybake.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/irwinx16/anybake/issues"
-  },
-  "homepage": "https://github.com/irwinx16/anybake#readme"
+	"name": "website",
+	"version": "1.0.0",
+	"description": "Website Template",
+	"main": "main.js",
+	"dependencies": {},
+	"devDependencies": {
+		"browser-sync": "^2.26.10",
+		"gulp": "^4.0.2"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/irwinx16/website.git"
+	},
+	"keywords": [],
+	"author": "Irwin Marcano",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/irwinx16/website/issues"
+	},
+	"homepage": "https://github.com/irwinx16/website#readme"
 }

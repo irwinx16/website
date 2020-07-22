@@ -3,14 +3,14 @@ var browserSync = require('browser-sync').create();
 
 
 // Static server
-gulp.task('browser-sync', function() {
-    browserSync.init({
-        server: ["./", "./pages/", "./css/", "./js/" ]
-    });
+gulp.task('browser-sync', function () {
+	browserSync.init({
+		server: ["./", "./css/", "./js/"]
+	});
 
-    gulp.watch("./pages/*.html").on('change', browserSync.reload);
-    gulp.watch("./css/*.css").on('change', browserSync.reload);
-    gulp.watch("./js/*.js").on('change', browserSync.reload);
+	gulp.watch("./*.html").on('change', browserSync.reload);
+	gulp.watch("./css/*.css").on('change', browserSync.reload);
+	gulp.watch("./js/*.js").on('change', browserSync.reload);
 });
 
 
