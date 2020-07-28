@@ -10,10 +10,8 @@ gulp.task('browser-sync', function () {
 		// server: ["./", "./css/", "./js/"]
 	});
 	gulp.watch("./docs/*.html").on('change', browserSync.reload);
-	gulp.watch("./css/*.css").on('change', browserSync.reload);
-	gulp.watch("./js/*.js").on('change', browserSync.reload);
+	gulp.watch("./docs/css/*.css").on('change', browserSync.reload);
+	gulp.watch("./docs/js/*.js").on('change', browserSync.reload);
 });
-
-
 
 gulp.task('default', gulp.series('browser-sync'));
