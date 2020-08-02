@@ -51,13 +51,13 @@ $('#submitTest').on('click', function (e) {
 		var resResul = response.result;
 
 		// create and append element with the data
-		var namesEl = $("<p class='text-center'>").text(resName1 + ' and ' + resName2);
+		var namesEl = $("<p class='text-center text-capitalize '>").text(resName1 + ' and ' + resName2);
 		resDiv.append(namesEl);
 
-		var compatibleEL = $("<p class='text-center'>").text('are ' + resPrcnt + ' % compatible');
+		var compatibleEL = $("<p class='text-center text-capitalize '>").text('are ' + resPrcnt + ' % compatible');
 		resDiv.append(compatibleEL);
 
-		var resultEL = $("<p class='text-center'>").text(resResul);
+		var resultEL = $("<p class='text-center text-capitalize '>").text(resResul);
 		resDiv.append(resultEL);
 
 		$('#loveResult').prepend(resDiv);
