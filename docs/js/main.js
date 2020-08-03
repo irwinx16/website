@@ -1,4 +1,5 @@
 console.log('READY');
+// NumberFact Page
 $('#submitNumber').on('click', function (e) {
 	e.preventDefault();
 	// grab text from input box
@@ -64,3 +65,22 @@ $('#submitTest').on('click', function (e) {
 	});
 
 });
+
+// Index Weather Section
+function getWeather() {
+	var access_k = "50f17f039c1613aceda1362d7120808d";
+	var url = "https://api.openweathermap.org/data/2.5/weather?" +
+		"q=Chicago&appid=" + access_k;
+	// Ajax Call
+	$.ajax({
+		url: url,
+		method: 'GET'
+	}).then(function (res) {
+		console.log(res);
+		var tempF = (res.main.temp - 273.15) * 1.80 + 32;
+		$("#tempF").text(tempF.toFixed(0))
+		$('#img').attr('src', "https://openweathermap.org/img/wn/" + res.weather[0].icon + ".png");
+	})
+
+}
+getWeather()
